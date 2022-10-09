@@ -29,12 +29,13 @@ call plug#begin()
 
 call plug#end()
 
-colorscheme github_dark_default
-
 lua << END
 require('lualine').setup {
     options = {
-        theme = 'github_dark_default'
+        theme = 'codedark'
     }
 }
 END
+
+colorscheme github_dark_default
+
