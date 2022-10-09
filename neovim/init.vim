@@ -20,6 +20,11 @@ set clipboard=unnamedplus
 " Mouse control
 set mouse=a
 
+" Autocomplete bracket
+imap {<CR> {<CR>}<Esc>ko
+imap [<CR> [<CR>]<Esc>ko
+imap (<CR> (<CR>)<Esc>ko
+
 " Plugins
 
 call plug#begin()
