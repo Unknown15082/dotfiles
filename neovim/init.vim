@@ -33,6 +33,7 @@ call plug#begin()
     Plug 'projekt0n/github-nvim-theme' " Github theme
     Plug 'nvim-tree/nvim-tree.lua' " Tree view
     Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' } " Syntax highlighting
+    Plug 'ellisonleao/glow.nvim' " Markdown preview
 
 call plug#end()
 
@@ -45,6 +46,9 @@ map <C-k><C-b> :NvimTreeToggle<CR>
 
 " treesitter
 source ~/.config/nvim/treesitter.lua
+
+" glow
+source ~/.config/nvim/glow.lua
 
 colorscheme github_dark_default
 
