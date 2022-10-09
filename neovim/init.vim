@@ -20,22 +20,47 @@ set clipboard=unnamedplus
 " Mouse control
 set mouse=a
 
+" Switching tabs
+
+map <M-Left> <C-W><Left> 
+map <M-Right> <C-W><Right>
+map <M-Up> <C-W><Up>
+map <M-Down> <C-W><Down>
+
 " Plugins
 
 call plug#begin()
 
     Plug 'nvim-lualine/lualine.nvim' | Plug 'ryanoasis/vim-devicons' " Status line
     Plug 'projekt0n/github-nvim-theme' " Github theme
+    Plug 'nvim-tree/nvim-tree.lua' " Tree view
 
 call plug#end()
 
-lua << END
+lua << LUALINE
 require('lualine').setup {
     options = {
         theme = 'codedark'
     }
 }
-END
+LUALINE
+
+lua << TREE
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
+
+require('nvim-tree').setup({
+    view = {
+        mappings = {
+            list = {
+                { key = "<CR>", action = "cd" },
+            }
+        }
+    }
+})
+TREE
+
+map <C-k><C-b> :NvimTreeToggle<CR>
 
 colorscheme github_dark_default
 
