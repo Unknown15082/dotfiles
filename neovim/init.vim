@@ -31,7 +31,7 @@ map <M-Down> <C-W><Down>
 
 call plug#begin()
 
-    Plug 'nvim-lualine/lualine.nvim' | Plug 'ryanoasis/vim-devicons' " Status line
+    Plug 'nvim-lualine/lualine.nvim' | Plug 'nvim-tree/nvim-web-devicons' " Status line
     Plug 'projekt0n/github-nvim-theme' " Github theme
     Plug 'nvim-tree/nvim-tree.lua' " Tree view
 
