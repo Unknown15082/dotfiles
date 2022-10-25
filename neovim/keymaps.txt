@@ -1,0 +1,43 @@
+gt -> Next tab
+gT -> Previous tab
+#gt -> Numbered tab
+
+gb -> Numbered buffer
+
+gf -> Edit file under cursor
+
+:sp -> Horizontal split
+:vsp -> Vertical split
+
+:e -> Edit file
+
+--- nvim-tree ---
+
+<C-k><C-b> -> Nvim_tree
+
+--- LSP Config ---
+
+<space>e -> Floating diagnostic
+[d -> Prev diagnostic
+]d -> Next diagnostic
+
+gD -> Declaration
+gd -> Definition
+K -> Hover
+<C-k> -> Signature
+gi -> Implementation
+gr -> References
+<space-D> -> Type symbol
+
+<F2> -> Rename
+<F4> -> Code action
+<space>f -> Format?
+
+--- nvim-cmp ---
+
+<C-p> -> Prev completion
+<C-n> -> Next completion
+<C-space> -> Trigger completion
+<C-e> -> Abort completion
+<CR> -> Use completion
+<Tab> -> Use completion / Expand snippet
